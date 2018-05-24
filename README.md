@@ -25,4 +25,4 @@ With `docker`
 
 Built by [dmstr](http://diemeisterei.de)
 
-Based on docker-nginx-redirect(https://github.com/schmunk42/docker-nginx-redirect)
+Based on [docker-nginx-redirect](https://github.com/schmunk42/docker-nginx-redirect)
