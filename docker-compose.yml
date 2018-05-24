@@ -1,18 +1,7 @@
-to:
-  image: schmunk42/nginx-redirect
+example_proxy:
+  build: https://github.com/collinsauve/docker-nginx-reverse-proxy.git
   ports:
-    - "8888:80"
+    - "80:80"
   environment:
-    - SERVER_REDIRECT=www.example.com
-    # optionally define path to redirect all requests
-    # if not set nginx var $request_uri is used
-    #- SERVER_REDIRECT_PATH=/landingpage
-    # optionally define schema to redirect all requests
-    # if not set nginx var $scheme is used
-    #- SERVER_REDIRECT_SCHEME=https
-    # optionally define the http code to use for redirection
-    # allowed Codes are: 301, 302, 303, 307, 308, default is 301
-    #- SERVER_REDIRECT_CODE=301
-    # optionally define the http code to redirect POST requests
-    # if not set or not in allowed Codes, SERVER_REDIRECT_CODE will be used
-    #- SERVER_REDIRECT_POST_CODE=
+    - SERVER_PROXY_PASS=http://www.example.com
+
