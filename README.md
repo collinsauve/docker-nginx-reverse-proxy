@@ -2,6 +2,10 @@
 
 A very simple container to forward (reverse proxy) HTTP traffic to another server, based on `nginx`
 
+## Resources
+
+- [Docker Hub](https://hub.docker.com/r/collinsauve/nginx-reverse-proxy/)
+
 ## Configuration
 
 ### Environment variables
