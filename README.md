@@ -1,10 +1,6 @@
-# docker-nginx-redirect
+# docker-nginx-reverse-proxy
 
-A very simple container to redirect HTTP traffic to another server, based on `nginx`
-
-## Resources
-
-- [Docker Hub](https://hub.docker.com/r/schmunk42/nginx-redirect/)
+A very simple container to forward (reverse proxy) HTTP traffic to another server, based on `nginx`
 
 ## Configuration
 
@@ -28,3 +24,4 @@ With `docker`
 ---
 
 Built by [dmstr](http://diemeisterei.de)
+Based on docker-nginx-redirect(https://github.com/schmunk42/docker-nginx-redirect)
