@@ -11,5 +11,6 @@ if [ ! -n "$SERVER_NAME" ] ; then
 fi
 
 sed -i "s|\${SERVER_PROXY_PASS}|${SERVER_PROXY_PASS}|" /etc/nginx/conf.d/default.conf
+sed -i "s|\${SERVER_PROXY_HOST}|${SERVER_PROXY_HOST}|" /etc/nginx/conf.d/default.conf
 
 exec nginx -g 'daemon off;'
